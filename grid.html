@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grid No-Wrap dengan Scroll Horizontal</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@1.14.0/dist/full.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.7/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body class="bg-gray-100 p-6">
     <div class="overflow-x-auto">
         <div class="grid grid-flow-col auto-cols-[249.5px] gap-4">
             <div class="bg-blue-500 text-white p-4 h-[70px] flex items-center justify-center">Column 1</div>
-            <div class="bg-blue-500 text-white p-4 h-[70px] flex items-center justify-center">Column 2</div>
+            <div class="bg-red-400 text-white p-4 h-[70px] flex items-center justify-center">Column 2</div>
             <div class="bg-blue-500 text-white p-4 h-[70px] flex items-center justify-center">Column 3</div>
             <div class="bg-blue-500 text-white p-4 h-[70px] flex items-center justify-center">Column 4</div>
             <div class="bg-blue-500 text-white p-4 h-[70px] flex items-center justify-center">Column 5</div>
@@ -28,5 +30,28 @@
             <div class="bg-blue-500 text-white p-4 h-[70px] flex items-center justify-center">Column 11</div>
         </div>
     </div>
+
+    <div class="relative text-9xl">
+        <!-- Element to swap on hover -->
+        <div class="absolute inset-0 flex items-center justify-center">
+            <!-- Initial State (Visible) -->
+            <div class="swap-off block hover:hidden">😇</div>
+            <!-- Swapped State (Hidden by Default) -->
+            <div class="swap-on hidden hover:block">😈</div>
+        </div>
+    </div>
+
+    <div class="bg-[url('./assets/chat.png')] hover:bg-[url('./assets/V2.png')] bg-cover w-48 h-48"></div>
+
+    <div class="w-full relative max-w-sm mx-auto h-auto">
+        <!-- Gambar -->
+        <img src="https://pagedone.io/asset/uploads/1688031162.jpg" alt="image" class="w-full max-w-sm mx-auto h-auto relative z-0">
+      
+        <!-- Overlay dan Teks -->
+        <div class="absolute inset-0 bg-white opacity-0 transition-opacity duration-300 flex items-center justify-center hover:opacity-80">
+          <span class="text-lg text-black font-semibold">Customizable Text</span>
+        </div>
+      </div>
 </body>
+
 </html>
