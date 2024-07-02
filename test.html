@@ -2,29 +2,71 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.7/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
-    <div class="col-span-4 relative"><img src="./assets/WhatsApp Image 2023-10-23 at 13.26.51.jpeg" alt=""
-            class="rounded-[30px]">
-        <div class="absolute inset-0 rounded-[30px] bg-gradient-to-t from-black/75 to-transparent pointer-events-none">
-        </div>
-        <div class="absolute left-0 top-0 z-10">
-            Muhammad Aga
+    <div class="container mx-auto max-w-[1080px] mt-10">
+        <div class="grid grid-cols-12">
+            <div class="col-span-6">
+                <img src="./assets/OnBoarding 1.png" alt="" srcset="" class="invisible absolute w-[353px] h-[506px] group/item1" id="item1">
+                <img src="./assets/OnBoarding 1.png" alt="" srcset="" class="invisible absolute w-[353px] h-[506px]" id="item2">
+                <img src="./assets/OnBoarding 1.png" alt="" srcset="" class="invisible absolute w-[353px] h-[506px]" id="item3">
+            </div>
+            <div class="col-span-6">
+                <ol class="relative text-gray-500 border-s border-gray-200 dark:border-gray-700 dark:text-gray-400">
+                    <li class="mb-10 ms-[50px] hover:bg-slate-200 group-hover/item1:visible" id="item1">
+                        <span
+                            class="absolute flex items-center justify-center w-8 h-8 bg-green-200 rounded-full -start-4 ring-4 ring-white dark:ring-gray-900 dark:bg-green-900">
+                            1
+                        </span>
+                        <h3 class="font-medium leading-tight">Klik Buka Akun</h3>
+                        <p class="text-sm text-gray-400">Klik Buka Akun untuk memulai proses registrasi</p>
+                    </li>
+                    <li class="mb-10 ms-[50px]" id="item2">
+                        <span
+                            class="absolute flex items-center justify-center w-8 h-8 bg-green-200 rounded-full -start-4 ring-4 ring-white dark:ring-gray-900 dark:bg-green-900">
+                            2
+                        </span>
+                        <h3 class="font-medium leading-tight">Siapkan e-KTP</h3>
+                        <p class="text-sm text-gray-400">Siapkan e-KTP kamu dan agar proses pembukaan akun berjalan
+                            lancar, baca ketentuan yang tersedia.</p>
+                    </li>
+                    <li class="mb-10 ms-[50px]" id="item3">
+                        <span
+                            class="absolute flex items-center justify-center w-8 h-8 bg-green-200 rounded-full -start-4 ring-4 ring-white dark:ring-gray-900 dark:bg-green-900">
+                            3
+                        </span>
+                        <h3 class="font-medium leading-tight">Isi Nomor Ponsel dan Email</h3>
+                        <p class="text-sm text-gray-400">Isi Nomor Ponsel dan Email kamu yang aktif sebagai proses
+                            verifikasi.</p>
+                    </li>
+                    <li class="mb-10 ms-[50px]">
+                        <span
+                            class="absolute flex items-center justify-center w-8 h-8 bg-green-200 rounded-full -start-4 ring-4 ring-white dark:ring-gray-900 dark:bg-green-900">
+                            4
+                        </span>
+                        <h3 class="font-medium leading-tight">Upload e-KTP & Selfie</h3>
+                        <p class="text-sm text-gray-400">Pembukaan Akun Telah Berhasil</p>
+                    </li>
+                    <li class="mb-10 ms-[50px]">
+                        <span
+                            class="absolute flex items-center justify-center w-8 h-8 bg-green-200 rounded-full -start-4 ring-4 ring-white dark:ring-gray-900 dark:bg-green-900">
+                            5
+                        </span>
+                        <h3 class="font-medium leading-tight">Pembukaan Akun Telah Berhasil</h3>
+                        <p class="text-sm text-gray-400">Selamat, pembukaan akun kamu sudah berhasil. Kamu bisa menikmati seluruh fasilitas Bank Saqu untuk memudahkan seluruh urusan kamu.</p>
+                    </li>
+                </ol>
+            </div>
         </div>
     </div>
 
-    <div class="col-span-4 relative">
-        <img src="./assets/WhatsApp Image 2023-10-23 at 13.26.51.jpeg" alt="" class="rounded-[30px]">
-        <div class="absolute inset-0 rounded-[30px] bg-gradient-to-t from-black/75 to-transparent pointer-events-none">
-        </div>
-        <div class="absolute left-0 bottom-0 z-10 p-4">
-            <p class="text-white text-lg font-medium">Muhammad Aga</p>
-        </div>
-    </div>
+
 </body>
 
 </html>
